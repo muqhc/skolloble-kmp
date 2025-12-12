@@ -1,3 +1,3 @@
 # Skolloble KMP
 
-[Skolloble](github.com/muqhc/skolloble) for Kotlin Multiplatform
+[Skolloble](https://github.com/muqhc/skolloble) for Kotlin Multiplatform

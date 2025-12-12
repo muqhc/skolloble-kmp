@@ -1,4 +1,4 @@
-import org.jetbrains.kotlin.gradle.dsl.JvmTarget
+import org.jetbrains.kotlin.gradle.ExperimentalWasmDsl
 
 plugins {
     alias(libs.plugins.kotlinMultiplatform)
@@ -10,8 +10,19 @@ version = "1.0.0"
 
 kotlin {
     jvm()
-    
+
     linuxX64()
+
+    js {
+        browser()
+        nodejs()
+    }
+
+    @OptIn(ExperimentalWasmDsl::class)
+    wasmJs {
+        browser()
+        nodejs()
+    }
 
     sourceSets {
         commonMain.dependencies {
