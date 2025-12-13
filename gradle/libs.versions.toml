@@ -1,11 +1,12 @@
 [versions]
-agp = "8.13.0"
 kotlin = "2.2.21"
 vanniktechMavenPublish = "0.34.0"
+strumentaAntlrKotlin = "1.0.8"
 
 [libraries]
 kotlin-test = { module = "org.jetbrains.kotlin:kotlin-test", version.ref = "kotlin" }
 
 [plugins]
 kotlinMultiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
+strumenta-antlrKotlin = { id = "com.strumenta.antlr-kotlin", version.ref = "strumentaAntlrKotlin" }
 vanniktech-mavenPublish = { id = "com.vanniktech.maven.publish", version.ref = "vanniktechMavenPublish" }
